@@ -37,4 +37,15 @@ typedef struct	s_matrix
 	double		m[4][4] = {{1,0,0,0},{0,1,0,0},{0,0,1,0},{0,0,0,1}}; //initialized with the matrix identity
 }				t_matrix;
 
+t_vec		*addition_vec(t_vec *a, t_vec *b);
+t_vec		*substract_vec(t_vec *a, t_vec *b);
+t_vec		*multiple_vec(t_vec *a, t_vec *b);
+double		distance(t_vec *a, t_vec *b);
+void		normalized(t_vec *vec);
+double		dot_product(t_vec *a, t_vec *b);
+t_vec		*cross_product(t_vec *a, t_vec *b);
+t_matrix	*multiple_mat(t_matrix *m1, t_matrix *m2);
+t_ptn		*multiple_ptn_mat(t_ptn *ptn, t_matrix *m);
+t_vec		*multiple_vec_mat(t_vec *vec, t_matrix *m);
+
 #endif
